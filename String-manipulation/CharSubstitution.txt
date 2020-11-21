@@ -1,0 +1,33 @@
+//CharSubstitution
+
+//DECLARATION
+DECLARE s:STRING
+DECLARE char1:CHAR
+DECLARE char2:CHAR
+DECLARE mystring:STRING
+DECLARE x:INTEGER
+DECLARE mychar:CHAR
+//INITIALIZATION
+s=""
+char1=''
+char2=''
+mystring=""
+mychar=''
+x=0
+
+PRINT"Input a string: "
+INPUT s
+PRINT "Enter a character you want to replace: "
+INPUT char1
+PRINT"Enter a character you want to replace with
+INPUT char2
+
+FOR x=1 TO LEN(s)
+    mychar=MID(s,x,1)
+    IF LOWER(mychar)=LOWER(char1)
+        mychar=char2
+    END IF
+    mystring=mystring & mychar
+NEXT x
+PRINT"The output string is: " & mystring
+
