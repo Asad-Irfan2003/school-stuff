@@ -1,0 +1,28 @@
+//fix_start
+
+//DECLARATION
+DECLARE s: STRING
+DECLARE fchar: CHAR
+DECLARE mychar: CHAR
+DECLARE mystring: STRING
+DECLARE x: INTEGER
+
+//INITIALIZATION
+mystr=''
+fchar=''
+mychar=''
+mystring=''
+x=0
+
+PRINT"Input a string: "
+INPUT s
+
+FOR x = 2 to LEN(s)
+    mychar=MID(s,x,1)
+    IF LCASE(fchar)=LCASE(mychar)
+        mychar='*'
+    END IF
+    mystring = mystring + mychar
+NEXT x
+
+PRINT("The output string is: " & fchar & mystring)
