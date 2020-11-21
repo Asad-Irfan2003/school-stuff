@@ -1,0 +1,27 @@
+//MixUP
+
+//DECLARATION
+DECLARE a: STRING
+DECALRE b: STRING
+DECLARE str1: STRING
+DECLARE str2: STRING
+
+
+//INITIALIZATION
+a=""
+b=""
+str1=""
+str2=""
+
+PRINT"Enter string a: "
+INPUT a
+PRINT"Enter string b: "
+INPUT b
+
+str1=LEFT(a,2)
+str2=LEFT(b,2)
+b=str1 + MID(b,3,LEN(b))
+a= str2 + MID(a,3,LEN(a))
+
+
+PRINT "The output string is:" & a & " " & b)
