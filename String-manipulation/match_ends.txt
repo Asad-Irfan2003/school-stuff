@@ -1,0 +1,25 @@
+//match_ends
+
+//DECLARATION
+DECLARE s: ARRAY[1:10]
+DECLARE count: INTEGER
+DECLARE strlength: STRING
+DECLARE fchar: CHAR
+DECLARE lchar: CHAR
+
+//INITIALIZATION
+s=["charismatic","happiness","agenda", "for","to", "so","demand","greeting"]
+count=0
+strlenth=0
+fchar=''
+lchar''
+
+FOR x= 1 TO 8
+    fchar=LEFT(s[x],1)
+    lchar=RIGHT(s[x],1)
+    strlength=LEN(s[x])
+    IF fchar=lchar AND strlength>=2
+        count=count+1
+    ENDIF
+NEXT X
+PRINT "The output string is: " & count
