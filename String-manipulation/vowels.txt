@@ -1,46 +1,46 @@
 //Vowels
 
 //DECLARATION
-DECLARE s:STRING
-DECLARE a:STRING
-DECLARE e:STRING
-DECLARE i:STRING
-DECLARE o:STRING
-DECLARE u:STRING
-DECLARE mychar:CHAR
-DECLARE voweltotal:INTEGER
+DECLARE s: STRING
+DECLARE a: INTEGER
+DECLARE e: INTEGER
+DECLARE i: iNTEGER
+DECLARE o: INTEGER
+DECLARE u: INTEGER
+DECLARE mychar: CHAR
+DECLARE voweltotal: INTEGER
 
 //INITIALIZATION
-s=""
-a=""
-e=""
-i=""
-o=""
-u=""
-mychar=''
-voweltotal=0
+s <- ""
+a <- 0
+e <- 0
+i <- 0
+o <- 0
+u <- 0
+mychar <- ''
+voweltotal <- 0
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT s
 
-FOR x = 1 TO LEN(s)
-    mychar=LOWER(MID(s,x,1))
-    IF mychar='a'
-        a=a+1
-    ELSEIF mychar='e'
-        e=e+1 
-    ELSEIF mychar='i'
-        i=i+1            
-    ELSEIF mychar='o'
-        o=o+1            
+FOR x <- 1 TO LEN(s)
+    mychar <- LOWER(MID(s,x,1))
+    IF mychar = 'a'
+        a <- a + 1
+    ELSEIF mychar = 'e'
+        e <- e + 1 
+    ELSEIF mychar = 'i'
+        i <- i + 1            
+    ELSEIF mychar = 'o'
+        o <- o + 1            
     ELSEIF mychar='u'
-        u=u+1            
+        u <- u + 1            
     ENDIF       
 NEXTX
-voweltotal=a+e+i+o+u
-PRINT"Number of vowels in string: " & STR(vowelcount)
-PRINT"a: " & STR(a)
-PRINT"e: " & STR(e)
-PRINT"i: " & STR(i)
-PRINT"o: " & STR(o)
-PRINT"u: " & STR(u)
+voweltotal = a + e + i + o + u
+PRINT "Number of vowels in string: " & STR(vowelcount)
+PRINT "a: " & STR(a)
+PRINT "e: " & STR(e)
+PRINT "i: " & STR(i)
+PRINT "o: " & STR(o)
+PRINT "u: " & STR(u)
