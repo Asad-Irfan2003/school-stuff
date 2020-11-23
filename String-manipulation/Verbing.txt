@@ -4,16 +4,16 @@
 DECLARE mystr: STRING
 
 //INITIALIZATION
-mystr=''
+mystr <- ''
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT mystr
 
 IF LEN(mystr) < 3 THEN
-    IF LOWER(RIGHT(mystr,3))<>"ing"
-        mystr=mystr & "ing"
+    IF LOWER(RIGHT(mystr,3)) <> "ing"
+        mystr <- mystr & "ing"
     ELSE
-        mystr=mystr & "ly"
+        mystr <- mystr & "ly"
     END IF
 END IF
-PRINT("The output string is: " & mystr)
+PRINT "The output string is: " & mystr
