@@ -1,17 +1,17 @@
 //donuts
 
 //DECLARATION
-DECLARE x:INTEGER
+DECLARE x: INTEGER
 
 
 //INITIALIZATION
-x=0
+x <- 0
 
-PRINT"Enter number of donuts: "
+PRINT "Enter number of donuts: "
 INPUT x
 
 IF x < 10
-    PRINT"Number of donuts:", STR(x)
+    PRINT "Number of donuts:" & STR(x)
 ELSE
-    PRINT"Number of donuts: many"
+    PRINT "Number of donuts: many"
 END IF
