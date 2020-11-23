@@ -8,21 +8,21 @@ DECLARE mystring: STRING
 DECLARE x: INTEGER
 
 //INITIALIZATION
-mystr=''
-fchar=''
-mychar=''
-mystring=''
-x=0
+mystr <- ""
+fchar <- ''
+mychar <- ''
+mystring <- ""
+x <- ""
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT s
 
 FOR x = 2 to LEN(s)
-    mychar=MID(s,x,1)
-    IF LCASE(fchar)=LCASE(mychar)
-        mychar='*'
+    mychar <- MID(s,x,1)
+    IF LCASE(fchar) = LCASE(mychar)
+        mychar <- '*'
     END IF
-    mystring = mystring + mychar
+    mystring <- mystring + mychar
 NEXT x
 
-PRINT("The output string is: " & fchar & mystring)
+PRINT"The output string is: " & fchar & mystring
