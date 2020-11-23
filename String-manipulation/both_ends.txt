@@ -1,17 +1,17 @@
 //both_ends
 
 //DECLARATION
-DECLARE s:STRING
+DECLARE s: STRING
 
 
 //INITIALIZATION
-s=""
+s <- ""
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT s
 
 IF LEN(s) > 4
     PRINT "The output string is: " & LEFT(s,2) & RIGHT(s,2)
 ELSE
-    PRINT"The output string is: " & s"
+    PRINT "The output string is: " & s
 END IF
