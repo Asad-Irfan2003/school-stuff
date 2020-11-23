@@ -1,0 +1,34 @@
+//PangramIdentifier
+
+//DECLARATION
+DECLARE s:STRING
+DECALRE alphabets: STRING
+DECLARE mychar: CHAR
+DECLARE x: INTEGER
+DECLARE y: INTEGER
+DECLARE mybool: BOOLEAN
+
+//INITIALIZATION
+s=""
+alphabets="abcdefghijklmnopqrstuvwxyz"
+mychar=''
+mybool=#TRUE#
+x=0
+y=0
+
+PRINT"Input a string: "
+INPUT s
+LOWER(s)
+FOR x=1 TO 26
+    mychar=MID(alphabets,x,1)
+    y=Locate(s,mychar)
+    IF y=0
+        mybool=#FALSE#
+    END IF
+NEXT x
+IF mybool= #TRUE#
+    PRINT"The string contains all alphabets"
+ELSE
+    PRINT"The string does not contain all alphabets"
+END IF
+
