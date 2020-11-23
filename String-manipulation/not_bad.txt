@@ -7,18 +7,17 @@ DECLARE str2: STRING
 
 
 //INITIALIZATION
-s=""
-str1=""
-str2=""
+s <- ""
+str1 <- ""
+str2 <- ""
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT s
 
-IF Locate(s,"not") < LOCATE(s,"bad")
-    str1=LEFT(s,Locate(s,"not")-1)
-    str2=MID(s,Locate(s,"bad")+3,LEN(s))
+IF Locate(s,"not") < Locate(s,"bad")
+    str1 <- LEFT(s,Locate(s,"not")-1)
+    str2 <- MID(s,Locate(s,"bad")+3,LEN(s))
     PRINT "The output string is:" & str1 & "good" & str2
 ELSE
     PRINT "The output string is:" & s
 END IF
-
