@@ -1,7 +1,7 @@
 //HighestChar
 
 //DECLARATION
-DECLARE s:STRING
+DECLARE s: STRING
 DECALRE alphabets: STRING
 DECLARE HighestCount: INTEGER
 DECLARE count: INTEGER
@@ -12,31 +12,31 @@ DECLARE y: INTEGER
 
 
 //INITIALIZATION
-s=""
-alphabets="abcdefghijklmnopqrstuvwxyz"
-HighestCount=-1000
-count=0
-mychar=''
-HighestChar=''
-x=0
-y=0
+s <- ""
+alphabets <- "abcdefghijklmnopqrstuvwxyz"
+HighestCount <- -1000
+count <- 0
+mychar <- ''
+HighestChar <- ''
+x <- 0
+y <- 0
 
-PRINT"Input a string: "
+PRINT "Input a string: "
 INPUT s
-s=LOWER(s)
-FOR x=1 TO 26
-    count=0
-    mychar=MID(alphabets,x,1)
-    y=InStr(s,mychar)
-    WHILE y>0
-        count=count+1
-        y=y+1
-        y=Locate(y,s,mychar)
+s <- LOWER(s)
+FOR x <- 1 TO 26
+    count <- 0
+    mychar <- MID(alphabets,x,1)
+    y <- InStr(s,mychar)
+    WHILE y > 0
+        count=count + 1
+        y <- y + 1
+        y <- Locate(y,s,mychar)
     END WHILE
-    IF count>HighestCount
-        HighestCount=count
-        HighestChar=mychar
+    IF count > HighestCount
+        HighestCount <- count
+        HighestChar <- mychar
     END IF
 NEXT X
-PRINT"The most occuring alphabet is: " & HighestChar
-PRINT"The most occuring alphabet is: " & HighestCount
+PRINT "The most occuring alphabet is: " & HighestChar
+PRINT "The most occuring alphabet is: " & HighestCount
