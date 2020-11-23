@@ -1,24 +1,25 @@
 //StrCounter
 
 //DECLARATION
-DECLARE s:STRING
+DECLARE s: STRING
 DECLARE mychar: CHAR
 DECLARE strcounter: INTEGER
 DECLARE x: INTEGER
-//INITIALIZATION
-s=""
-mychar=''
-strcounter=0
-x=0
 
-PRINT"Input a string: "
+//INITIALIZATION
+s <- ""
+mychar <- ''
+strcounter <- 0
+x <- 0
+
+PRINT "Input a string: "
 INPUT s
 PRINT "Enter a character you want to count: "
 INPUT mychar
 
-FOR x=1 TO LEN(s)
-    IF mychar=LOWER(MID(s,x,1))
-        strcounter=strcounter+1
+FOR x <- 1 TO LEN(s)
+    IF mychar = LOWER(MID(s,x,1))
+        strcounter <- strcounter + 1
     ENDIF
-NEXTx
+NEXT x
 PRINT "The number of '" & mychar & "' in string is: " & strcounter
