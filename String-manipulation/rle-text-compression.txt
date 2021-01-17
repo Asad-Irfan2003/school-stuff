@@ -1,0 +1,32 @@
+#Task: Make a program that performs RLE text compression
+#Sample Input: AAARRRRGGGHH
+#Sample Output: A 3 R 4 G 3 H 2
+
+DECLARE mystr: STRING
+DECLARE mychar: CHAR
+DECLARE outstr: STRING
+DECLARE charfrequency: INTEGER
+DECLARE x: INTEGER
+
+mystr ← ""
+mychar ← ''
+outstr ← ""
+charfrequency ← 0
+x ← 1
+
+OUTPUT "Input a string: "
+INPUT mystr
+WHILE x <= LEN(mystr)
+    charfrequency ← 0
+    mychar ← MID(mystr , x , 1)
+    FOR y ← x TO LEN(mystr)
+        IF mychar ← MID(mystr , y , 1)
+            charfrequency ← charfrequency + 1
+        ELSE
+            EXIT FOR
+        ENDIF
+    NEXT
+outstr ← outstr & mychar & STR(charfrequency) & " "
+x ← x + charfrequency
+END WHILE
+PRINT "The output string is: " , outstr
