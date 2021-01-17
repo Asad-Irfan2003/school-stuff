@@ -1,6 +1,6 @@
-#Task: Make a program that performs RLE text compression
-#Sample Input: AAARRRRGGGHH
-#Sample Output: A 3 R 4 G 3 H 2
+//Task: Make a program that performs RLE text compression
+//Sample Input: AAARRRRGGGHH
+//Sample Output: A 3 R 4 G 3 H 2
 
 DECLARE mystr: STRING
 DECLARE mychar: CHAR
