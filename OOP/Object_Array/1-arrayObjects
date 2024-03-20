@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+/*
+Array - Primitive data types
+4 types
+1- Compile Time Array using default constructor(Static Allocation)
+2- Compile Time Array using parameterized constructor (Static Allocation)
+3- Run Time Array using default constructor(Dynamic Allocation)
+4- Run Time Array using parametrized constructor (Dynamic Allocation)
+*/
+
+
+int main()
+{
+    int A[100]={0}; //Static Allocation
+    int *B=new int[100]; //Dynamic Allocation
+    delete[] B;
+}
