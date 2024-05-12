@@ -1,0 +1,14 @@
+Stream
+->Sequence of bytes or flow of data
+    1) Acts as a source From which input data can be obtained by a program
+    2) Destination to which out data can be sent by program
+-> When we open stream one end is always attached to program that opens the stream
+->Other end is attached to file accessed by name
+
+
+Input Stream
+->When data flows from a device to main memory
+
+Output Stream
+->WHen data flows from main memory to device
+
