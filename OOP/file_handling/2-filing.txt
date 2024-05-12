@@ -1,0 +1,14 @@
+Files
+-> They permenantly store data
+
+File Handling
+->Storing output from a program into Second Memory(file)
+->It is used to permenanty store data
+->It is used to transfer input from one computer to another
+
+
+For file handling we use <fstream> library
+ ->Contains classes: ifstream, ofstream, and fstream
+ ->ifstream: Input stream object
+ ->ofstream: Output stream object
+ ->fstream: input/output stream object

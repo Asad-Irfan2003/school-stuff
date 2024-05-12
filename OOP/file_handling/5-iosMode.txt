@@ -1,0 +1,30 @@
+
+in mode
+->Input
+->Opening file for reading
+
+out mode
+->Output
+->Opening file for writing
+
+binary
+->binary
+->Operations are performed in binary rather than text
+
+ate
+->At end
+->Positions the file pointer at end(Same as append)
+
+app
+->append
+All operations happen at the end of the file
+
+trunc
+->Truncate
+->All contents in file are deleted before it is open
+
+
+Default opening Modes for file objects
+ostream: ios::out
+istream:ios::in
+fstream: ios::out || ios::in
